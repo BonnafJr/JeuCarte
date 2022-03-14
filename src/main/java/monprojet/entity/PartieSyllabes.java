@@ -1,0 +1,27 @@
+package monprojet.entity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.*;
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@RequiredArgsConstructor
+@ToString
+@Entity // Une entité JPA
+public class PartieSyllabes {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @NonNull
+    @ManyToOne(optional = false) // obligatoire, la clé étrangère ne doit pas être nulle
+    PartiesGagnees partieGagnees;
+
+    @OneToMany(mappedBy = "partieSyllabes")
+    @ToString.Exclude
+    private List<PaireSyllabes> paireSyllabes = new ArrayList<>();
+}
