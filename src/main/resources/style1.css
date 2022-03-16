@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'ambleregular';
+    src: url('police/Amble-Regular-webfont.eot');
+    src: url('police/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Amble-Regular-webfont.woff') format('woff'),
+         url('police/Amble-Regular-webfont.ttf') format('truetype'),
+         url('police/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+/*Introduction d'une nouvelle police*/
+
+body
+{
+    background-color: rgb(12, 194, 170);
+}
+
+h1{
+    font-family: "ambleregular", Impact,'Arial Black', Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align:center;
+    position:relative;
+    width: 300px;
+    height: 180px;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+}
+.entete{
+    background-color:rgb(12, 194, 170);
+    padding:0 10px;
+}
+
+.titre1{
+    line-height:30px;
+    box-shadow:0 15px 0 0 rgb(12, 194, 170) inset, 0 20px 0 0 black inset;
+}
+
+.bloc1{
+    color : rgb(0, 0, 0);
+    border: 1.2px rgb(148, 236, 47) solid ;
+    border-radius: 20px;
+    font-family: 'Arial Black', Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(148, 236, 47);
+    font-size: 20px;
+    padding: 30px 55px 30px 55px;
+    margin: auto;
+}
+
+.bloc2{
+    color : rgb(0, 0, 0);
+    border: 1.2px rgb(148, 236, 47) solid ;
+    border-radius: 20px;
+    font-family: 'Arial Black', Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(148, 236, 47);
+    font-size: 20px;
+    padding: 30px 105px 30px 105px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+ }
+ 
+.bloc3{
+    color : rgb(0, 0, 0);
+    border: 1.2px rgb(148, 236, 47) solid ;
+    border-radius: 20px;
+    font-family: 'Arial Black', Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(148, 236, 47);
+    font-size: 20px;
+    padding: 30px 30px 30px 30px;
+    margin: auto;    
+}
+.bloc4{
+    color : rgb(0, 0, 0);
+    border: 1.2px rgb(148, 236, 47) solid ;
+    border-radius: 20px;
+    font-family: 'Arial Black', Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(148, 236, 47);
+    font-size: 20px;
+    padding: 30px 30px 30px 30px;
+    margin: auto;    
+}
+
+.blocs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 300px;
+}
+
+.element2
+{
+    align-self: flex-end;
+}
