@@ -21,15 +21,13 @@ h1{
     font-size: 50px;
     text-align:center;
     position:relative;
-    width: 300px;
-    height: 180px;
     margin: auto;
     padding: 10px 10px 10px 10px; 
 
     overflow: hidden;
 }
 
-h1:before, h1:after{
+h1:before{
     background-color: rgb(0, 0, 0);
     content: "";
     display: inline-block;
@@ -37,6 +35,17 @@ h1:before, h1:after{
     position: relative;
     vertical-align: middle;
     width:10%;
+}
+
+h1:after{
+    background-color: rgb(0, 0, 0);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width:10%;
+    margin-left: 20px;
 }
 
 h1::before{
@@ -48,17 +57,7 @@ h1::after{
     right: 0.2em;
     margin-right: -80%;
 }
-/*
-.entete{
-    background-color:rgb(12, 194, 170);
-    padding:0 10px;
-}
 
-.titre1{
-    line-height:30px;
-    box-shadow:0 15px 0 0 rgb(12, 194, 170) inset, 0 20px 0 0 black inset;
-}
-*/
 .bloc1{
     color : rgb(0, 0, 0);
     border: 1.2px rgb(148, 236, 47) solid ;
@@ -114,7 +113,7 @@ a{
     flex-wrap: wrap;
     align-content: center;
     
-    height: 150px;
+    height: 200px;
 }
 
 .blocs2{
@@ -125,7 +124,7 @@ a{
     flex-wrap: wrap;
     align-content: center;
     
-    height: 150px;
+    height: 200px;
 }
 
 .element3{

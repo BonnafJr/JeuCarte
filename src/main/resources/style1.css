@@ -21,21 +21,39 @@ h1{
     font-size: 50px;
     text-align:center;
     position:relative;
-    width: 300px;
-    height: 180px;
     margin: auto;
     padding: 10px 10px 10px 10px;
 }
-.entete{
-    background-color:rgb(12, 194, 170);
-    padding:0 10px;
+h1:before{
+    background-color: rgb(0, 0, 0);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width:10%;
 }
 
-.titre1{
-    line-height:30px;
-    box-shadow:0 15px 0 0 rgb(12, 194, 170) inset, 0 20px 0 0 black inset;
+h1:after{
+    background-color: rgb(0, 0, 0);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width:10%;
+    margin-left: 10px;
 }
 
+h1::before{
+    right: 0.2em;
+    margin-left: -80%;
+}
+
+h1::after{
+    right: 0.2em;
+    margin-right: -80%;
+}
 .bloc1{
     color : rgb(0, 0, 0);
     border: 1.2px rgb(148, 236, 47) solid ;
